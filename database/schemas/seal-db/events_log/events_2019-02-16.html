@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<head>
+<style>
+table { width: 100% }
+th { font:bold 13pt Tahoma; }
+td { font:normal 10pt Tahoma; }
+h1 {font:normal 13pt Tahoma;}
+</style>
+</head>
+<body>
+<h1>Sat Feb 16 08:11:46 BRST 2019</h1>
+<table border="0" cellpadding="5" cellspacing="3">
+<tr align="left">
+	<th style="width:10%">Log level</th>
+	<th style="width:15%">Time</th>
+	<th style="width:75%">Log Message</th>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[Kernel] SEAL-DB Initializing</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[Kernel] Config File: database\configs\seal-db-general-configs.properties</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[Kernel] Using LRU Buffer Policy</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[Dispatcher] Dispatcher Server Starts port:3000</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>fev 16,2019 08:11</td>
+	<td>[ConnectionService] Create new local connection 14 -> URL: seal-db username: admin password: admin</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:0|schemas|0|3|1 columns: [0|schema_id|int|0, 0|schema_name|varchar|0]</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:1|tables|0|21|1 columns: [0|table_id|int|0, 0|table_name|varchar|0, 0|lastBlockWrited|int|0, 0|lastTupleWrited|int|0, 0|schema_id_fk|int|0]</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:2|columns|1|106|1 columns: [0|column_id|int|0, 0|column_name|varchar|0, 0|column_type|varchar|0, 0|table_id_fk|int|0]</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[CatalogInitializer] open schema: 2|company path: database\schemas\company</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:10|branch|0|5|2 columns: [17|branch_id|int|10, 18|branch_name|varchar|10]</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:11|employee|0|13|2 columns: [19|employee_id|int|11, 20|employee_name|varchar|11, 21|salary|float|11, 22|branch_id_fk|int|11]</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:12|client|0|16|2 columns: [23|client_id|int|12, 24|client_name|varchar|12]</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:13|sales|0|52|2 columns: [25|sales_id|int|13, 26|date|varchar|13, 27|amount|int|13, 28|product_id_fk|int|13, 29|employee_id_fk|int|13, 30|client_id_fk|int|13]</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:14|product|0|10|2 columns: [31|product_id|int|14, 32|product_name|varchar|14, 33|price|float|14]</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[CatalogInitializer] open schema: 3|quiz path: database\schemas\quiz</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:15|questionario|0|3|3 columns: [34|questionario_id|int|15, 35|questionario_nome|varchar|15]</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:16|pergunta|0|15|3 columns: [36|pergunta_id|int|16, 37|pergunta_texto|varchar|16, 38|questionario_id_fk|int|16]</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:17|resposta|0|10|3 columns: [39|resposta_id|int|17, 40|resposta_texto|varchar|17, 41|pergunta_id_fk|int|17, 42|usuario_id_fk|int|17]</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:18|usuario|0|4|3 columns: [43|usuario_id|int|18, 44|usuario_nome|varchar|18]</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[CatalogInitializer] open schema: 4|tpch path: database\schemas\tpch</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:19|customer|5|105|4 columns: [45|custkey|varchar|19, 46|c_name|varchar|19, 47|c_address|varchar|19, 48|nationkey|varchar|19, 49|c_phone|varchar|19, 50|c_acctbal|varchar|19, 51|c_mktsegment|varchar|19, 52|c_comment|varchar|19]</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:20|lineitem|5|105|4 columns: [53|orderkey|varchar|20, 54|partkey|varchar|20, 55|suppkey|varchar|20, 56|l_linenumber|varchar|20, 57|l_quantity|varchar|20, 58|l_extendedprice|varchar|20, 59|l_discount|varchar|20, 60|l_tax|varchar|20, 61|l_returnflag|varchar|20, 62|l_linestatus|varchar|20, 63|l_shipdate|varchar|20, 64|l_commitdate|varchar|20, 65|l_receiptdate|varchar|20, 66|l_shipinstruct|varchar|20, 67|l_shipmode|varchar|20, 68|l_comment|varchar|20]</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:21|part|4|104|4 columns: [69|partkey|varchar|21, 70|p_name|varchar|21, 71|p_mfgr|varchar|21, 72|p_brand|varchar|21, 73|p_type|varchar|21, 74|p_size|varchar|21, 75|p_container|varchar|21, 76|p_retailprice|varchar|21, 77|p_comment|varchar|21]</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:22|nation|0|25|4 columns: [78|nationkey|varchar|22, 79|n_name|varchar|22, 80|regionkey|varchar|22, 81|n_comment|varchar|22]</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:23|partsupp|4|104|4 columns: [82|partkey|varchar|23, 83|suppkey|varchar|23, 84|ps_availqty|varchar|23, 85|ps_supplycost|varchar|23, 86|ps_comment|varchar|23]</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:24|supplier|4|104|4 columns: [87|suppkey|varchar|24, 88|s_name|varchar|24, 89|s_address|varchar|24, 90|nationkey|varchar|24, 91|s_phone|varchar|24, 92|s_acctbal|varchar|24, 93|s_comment|varchar|24]</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:25|order|4|104|4 columns: [94|orderkey|varchar|25, 95|custkey|varchar|25, 96|o_orderstatus|varchar|25, 97|o_totalprice|varchar|25, 98|o_orderdate|varchar|25, 99|o_orderpriority|varchar|25, 100|o_clerk|varchar|25, 101|o_shippriority|varchar|25, 102|o_comment|varchar|25]</td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[TableManipulate] open table:26|region|0|4|4 columns: [103|regionkey|varchar|26, 104|r_name|varchar|26, 105|r_comment|varchar|26]</td>
+</tr>
+<tr>
+	<td style="color:#FFAC00"><b>WARNING</b></td>
+	<td>fev 16,2019 08:11</td>
+	<td>[RecoveryManager] Normal startup without recovery...</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>fev 16,2019 08:11</td>
+	<td>[ConnectionService] Create new local connection 15 -> URL: seal-db username: admin password: admin</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>fev 16,2019 08:11</td>
+	<td>[ConnectionService] Create new local connection 16 -> URL: tpch username: admin password: </td>
+</tr>
+<tr>
+	<td style="color:#006400"><b>CONFIG</b></td>
+	<td>fev 16,2019 08:12</td>
+	<td>[Kernel] Safe Finalize...</td>
+</tr>
+</table>
+</body>
+</html>
